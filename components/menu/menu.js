@@ -51,7 +51,7 @@ class Header extends HTMLElement {
             <a role="menuitem" href="#home">Home</a>
             <a role="menuitem" href="#section-about">Sobre</a>
             <a role="menuitem" href="#social-medias">Contato</a>
-            <a role="menuitem" href="portfolio.html" class="link-portfolio">Portfólio</a>
+            <a role="menuitem" href="#" class="link-portfolio">Portfólio</a>
         </nav>
       </header>
     `;
