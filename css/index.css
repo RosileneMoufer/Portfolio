@@ -412,6 +412,12 @@ footer #email {
     color: var(--title-color);
   }
 
+  #section-about h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
   /* timeline */
 
   #timeline::after {
@@ -513,8 +519,9 @@ footer #email {
 
   #social-medias h2 {
     color: var(--title-color);
-    font-size: 20px;
-    font-weight: 500;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     text-align: center;
   }
 
