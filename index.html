@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Flutter, Kotlin" />
+        <meta name="description" content="Rosilene Portfólio" />
+        <meta name="author" content="Rosilene Moufer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css" /> 
+        <title>Landpage</title>
+        <script src="data/data.js" type="text/javascript"></script>
+        <script src="components/menu/menu.js" type="text/javascript" defer></script>
+      </head>
+
+    <body>
+        <header-component></header-component>
+
+        <main>
+            <section id="section-home">
+                <img id="section-home-left" src="assets/foto_portfolio.jpg">
+
+                <div id="section-home-right">
+                    <div id="section-home-right-text">
+                        <h1>Olá,</h1>
+
+                        <p>eu sou Rosilene Fernandes, tenho 29 anos e mais de 10 anos de experiência em programação.</p>
+
+                        <p>
+                          Minha jornada começou em 2011, criando sites em HTML e CSS. Nesse mesmo período, cursando o ensino médio integrado
+                          com o técnico em Telecomunicações no IFCE, iniciei o aprendizado de lógica de programação em Pascal e, logo depois,
+                          comecei a estudar Java e C.
+                        </p>
+
+                        <p>
+                          Atualmente, estou focada em expandir meus conhecimentos com ferramentas de tecnologias modernas. Tenho me dedicado
+                          a aprender versionamento de código com Git, além de me especializar no desenvolvimento de aplicativos móveis
+                          em Flutter e Jetpack Compose.
+                        </p>
+
+                        <p>Confira os projetos que já desenvolvi clicando no botão abaixo:</p>
+                    </div>
+               
+                  
+                    <a id="section-home-right-button-a" href="#">
+                      Ver projetos
+                    </a>
+              
+                </div>
+            </section>
+
+            <section id="section-about">
+                <h1>O que fiz até aqui</h1>
+
+                <div id="timeline">
+
+                  <script type="text/javascript">
+                    function init() {
+                      var timeline = document.getElementById("timeline");
+              
+                      for (i = 0; i < data.length; i++) {
+                        let position;
+
+                        if (i % 2 != 0) {
+                          position = "right"; 
+                        } else {
+                          position = "left";                      
+                        } 
+
+                        let content = `<div class='container ` + position + `'>
+                                          <div class='date'>` + data[i].date + `</div>
+                                          <div class='content'>
+                                            <h2>` + data[i].title + `</h2>
+                                            <p>` + data[i].description + `</p>
+                                          </div>
+                                        </div>`;
+
+                          timeline.innerHTML = timeline.innerHTML + content;
+                      }
+                    }
+                    
+                    window.onload = init;
+                  </script>
+
+                </div>
+            </section>
+
+            <section id="social-medias">
+              <h1>Siga-me nas redes sociais</h1>
+
+              <div id="box-images">
+                  <a href="https://br.linkedin.com/in/rosilenemoufer" target="_blank">
+                    <img class="logo" src="assets/social-media/linkedin.svg" alt="Linkedin" width="30%" />
+                  </a>
+
+                  <a href="https://github.com/rosilenemoufer" target="_blank">
+                    <img class="logo" src="assets/social-media/github.svg" alt="GitHub" width="31%" />
+                  </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p id="email">rosilenemoufer@gmail.com</p>
+            <p>Romoufer 2024</p>
+        </footer>
+
+        <script type="text/javascript" src="javascript/menu.js"></script>
+
+    </body>
+</html>
