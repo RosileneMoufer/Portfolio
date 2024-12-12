@@ -28,6 +28,10 @@ body {
   max-width: 1600px;
 }
 
+a {
+  transition: .2s;
+}
+
 /* section */
 
 main {
